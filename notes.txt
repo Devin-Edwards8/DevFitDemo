@@ -1,3 +1,0 @@
-using jquery load (look into)
-
-html import definitely works, but app doesnt show. 

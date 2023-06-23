@@ -8,38 +8,7 @@
       content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1.00001,viewport-fit=cover"
     />
     <title>fitness_app</title>
-    <style>
-      #root,
-      body,
-      html {
-        width: 100%;
-        -webkit-overflow-scrolling: touch;
-        margin: 0;
-        padding: 0;
-        min-height: 100%;
-      }
-      #root {
-        flex-shrink: 0;
-        flex-basis: auto;
-        flex-grow: 1;
-        display: flex;
-        flex: 1;
-      }
-      html {
-        scroll-behavior: smooth;
-        -webkit-text-size-adjust: 100%;
-        height: calc(100% + env(safe-area-inset-top));
-      }
-      body {
-        display: flex;
-        overflow-y: auto;
-        overscroll-behavior-y: none;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        -ms-overflow-style: scrollbar;
-      }
-    </style>
+    <link rel="stylesheet" href="index.css">
     <meta
       name="description"
       content="An app to assist with your fitness goals. Tracks your workouts and daily nutritional intake. "
@@ -157,7 +126,18 @@
         </div>
       </form></noscript
     >
-    <div id="root"></div>
+    <div class="scene">
+      <div class="summary">
+        <h1>Welcome to the devFit demo!</h1>
+        <p>devFit is a React Native fitness app built with the expo SDK. Feel free to test the functionality yourself in the demo window -></p>
+        <p>You probably came from my portfolio, but in case you didn't, check it out some of my other projects here!</p>
+      </div>
+      <div class="container">
+        <div class="phone">
+          <div class="notch"></div>
+          <div id="root"></div>
+        </div>
+    </div>
     <script src="/static/js/runtime~app.27401809.js"></script>
     <script src="/static/js/2.515842d3.chunk.js"></script>
     <script src="/static/js/app.8ec80c57.chunk.js"></script>
